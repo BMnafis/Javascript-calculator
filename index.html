@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Calculator</title>
+    <!-- Tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .main-btns input {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-4xl text-center mt-6 font-medium">Javascript Calculator</h1>
+
+    <section class="calculator-section w-1/4 mx-auto bg-green-300 p-4">
+      <form name="form">
+        <!-- Calculator Output -->
+        <input
+          class="w-full px-4 py-2 text-xl"
+          type="text"
+          id="panel"
+          name="panel"
+          placeholder="0"
+        />
+
+        <!-- Main buttons -->
+        <div class="main-btns mt-8 grid grid-cols-4 gap-4">
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn1"
+            value="1"
+            onclick="calc(btn1.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn2"
+            value="2"
+            onclick="calc(btn2.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn3"
+            value="3"
+            onclick="calc(btn3.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btnplus"
+            value="+"
+            onclick="calc(btnplus.value)"
+          />
+
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn4"
+            value="4"
+            onclick="calc(btn4.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn5"
+            value="5"
+            onclick="calc(btn5.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn6"
+            value="6"
+            onclick="calc(btn6.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btnminus"
+            value="-"
+            onclick="calc(btnminus.value)"
+          />
+
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn7"
+            value="7"
+            onclick="calc(btn7.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn8"
+            value="8"
+            onclick="calc(btn8.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btn9"
+            value="9"
+            onclick="calc(btn9.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btnmulti"
+            value="*"
+            onclick="calc(btnmulti.value)"
+          />
+
+          <input
+            class="py-2 font-medium bg-yellow-700 text-white"
+            type="button"
+            name="back"
+            value="B"
+            onclick="backF()"
+          />
+          <input
+            class="py-2 font-medium bg-pink-700 text-white"
+            type="button"
+            name="btnClear"
+            value="AC"
+            onclick="clearBtn()"
+          />
+          <input
+            class="py-2 font-medium bg-green-700 text-white"
+            type="button"
+            name="btneql"
+            value="="
+            onclick="calculator(panel.value)"
+          />
+          <input
+            class="py-2 font-medium"
+            type="button"
+            name="btndivide"
+            value="/"
+            onclick="calc(btndivide.value)"
+          />
+        </div>
+      </form>
+    </section>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
